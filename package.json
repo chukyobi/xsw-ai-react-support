@@ -1,5 +1,5 @@
 {
-    "name": "@xsw/react-support",
+    "name": "@jayclinton/react-support",
     "version": "1.0.0",
     "type": "module",
     "description": "React/Next.js integration for XSW AI Support Agent",

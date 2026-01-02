@@ -1,15 +1,15 @@
-# @xsw/react-support
+# @jayclinton/react-support
 
 React/Next.js integration package for XSW AI Support Agent.
 
 ## Installation
 
 ```bash
-npm install @xsw/react-support
+npm install @jayclinton/react-support
 # or
-yarn add @xsw/react-support
+yarn add @jayclinton/react-support
 # or
-pnpm add @xsw/react-support
+pnpm add @jayclinton/react-support
 ```
 
 ## Quick Start
@@ -19,7 +19,7 @@ pnpm add @xsw/react-support
 ```tsx
 // app/layout.tsx
 'use client';
-import { XSWProvider } from '@xsw/react-support';
+import { XSWProvider } from '@jayclinton/react-support';
 
 export default function RootLayout({ children }) {
   return (
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
 
 ```tsx
 // pages/_app.tsx
-import { XSWProvider } from '@xsw/react-support';
+import { XSWProvider } from '@jayclinton/react-support';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -65,7 +65,7 @@ export default MyApp;
 
 ```tsx
 // App.tsx
-import { XSWProvider } from '@xsw/react-support';
+import { XSWProvider } from '@jayclinton/react-support';
 
 function App() {
   return (
@@ -85,7 +85,7 @@ function App() {
 ### Track Custom Events
 
 ```tsx
-import { useXSW } from '@xsw/react-support';
+import { useXSW } from '@jayclinton/react-support';
 
 function CheckoutButton() {
   const { track } = useXSW({
@@ -117,7 +117,7 @@ function CheckoutButton() {
 ### Control Widget Programmatically
 
 ```tsx
-import { useXSWWidget } from '@xsw/react-support';
+import { useXSWWidget } from '@jayclinton/react-support';
 
 function HelpButton() {
   const { open, close, toggle } = useXSWWidget({
@@ -139,7 +139,7 @@ function HelpButton() {
 ### Combined Hook
 
 ```tsx
-import { useXSWSupport } from '@xsw/react-support';
+import { useXSWSupport } from '@jayclinton/react-support';
 
 function MyComponent() {
   const { 
