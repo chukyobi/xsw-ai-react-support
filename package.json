@@ -1,0 +1,44 @@
+{
+    "name": "@xsw/react-support",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "React/Next.js integration for XSW AI Support Agent",
+    "main": "dist/index.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "react",
+        "nextjs",
+        "ai",
+        "support",
+        "chatbot",
+        "customer-support"
+    ],
+    "author": "Chukwudi Obi",
+    "license": "MIT",
+    "peerDependencies": {
+        "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+        "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^25.0.7",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-typescript": "^11.1.5",
+        "@types/react": "^18.2.45",
+        "rollup": "^4.9.1",
+        "tslib": "^2.6.2",
+        "typescript": "^5.3.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chukyobi/xsw-ai-react-support.git"
+    }
+}
